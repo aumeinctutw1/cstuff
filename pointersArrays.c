@@ -59,5 +59,24 @@ int main(int argc, const char *argv[]) {
 	printf("Value found!\n");
 	printf("Position: %d\n", pos); 
 		
+
+	/* Pointers example */
+	int test = 4;
+	/* points to the address of test, the &-Operator returns the adress of a value */
+	int *ptr = &test;
+
+	/* the value of test is 4, the value if ptr is a adress (0x16f797278) to the location of 4 */
+	printf("Value of test: %d\n", test);
+	printf("Value of ptr: %p\n", ptr);
+
+	/* if ptr is derefenced it prints the value of the adress its poiting to */
+	printf("Value of *ptr: %d\n", *ptr);
+
+	/* Prints:
+		Value of test: 4
+		Value of ptr: 0x16f797278
+		Value of *ptr: 4
+	*/
+
 	return 0;
 }
